@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-11-18",
+  "bind_ready": true,
+  "outcome": "An operator names which coding-agent sessions to bring into this checkout. The checkout extracts those sessions, analyzes each one for fitness toward effectiveness and efficiency, and writes a patterns report from the analyses. New measurement factors are confirmed by the practice maintainer and the judgment agent, not by the operator's run.",
+  "goals": [
+    "Bring the sessions the operator names into this checkout, extract each one, analyze each one, and write a patterns report from those analyses.",
+    "Judge fitness toward effectiveness and efficiency with the factors already written, when the evidence is definitive, and keep new prompt shapes, goal types, and techniques as observations until the practice maintainer and the judgment agent confirm a new factor."
+  ],
+  "requirements": [
+    "The harnesses are Cursor, Copilot, Codex, oMP, and Pi. Pi and oMP share one session format.",
+    "Extract, per-session analysis, and the patterns report are separate stages. Each stage reads only the previous stage's output.",
+    "Scope is the operator's instruction, including all sessions, a time window, named sessions, and named harnesses.",
+    "A status file lists every session in the working set as new, exported, analyzed, or failed. A failed row stays visible.",
+    "A run with no new scope exports new rows, analyzes exported rows, leaves a finished analysis in place, and rebuilds the patterns report when any analysis is newer than the report.",
+    "A finished analysis is redone only when its engine has changed and the operator asks. Narrowing the scope deletes analyses only when the operator chooses that. Otherwise the skill asks and deletes nothing.",
+    "The skills advise only. They do not change the repo, standing instructions, or harness logs.",
+    "The critique scores the human's prompting only. Harness and model behavior is evidence. Missing log data does not lower a result.",
+    "The goal is the outcome the work is for. A paste or other mechanic is not the goal. If the outcome cannot be named, or finish cannot be shown, the work is not finished.",
+    "A prompt, a series, or the session may carry a factor when the evidence is definitive. Evidence that is not definitive is neither a pass nor a fail.",
+    "The factors already written stay in force, each labeled effectiveness or efficiency. The rung, the pass rate, and the strength stay as already decided.",
+    "An observation that matches no factor is recorded and does not move the rung. A new factor exists only after the practice maintainer and the judgment agent confirm it. The product operator sends shapes, extracts, and reports and does not add a factor.",
+    "The evidence file is one line per definitive case: indicator id, rung, good or bad, turn id, and the quote. The critique reads that file.",
+    "The headline rung is the highest rung at or above 80% rate and 50% strength, with every lower occupied rung clearing both, in a contiguous block from rung 1.",
+    "Skills state their own rules. Natural Language Compiler practice is a reference, not a dependency."
+  ],
+  "knowledge_domains": [
+    "prompting-fitness",
+    "coding-agent-sessions"
+  ]
+}
