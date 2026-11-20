@@ -1,0 +1,12 @@
+.nlc/hub
+.nlc/versions/
+.nlc/current
+.nlc/store/
+session-logs/
+session-critiques/
+session-evidence/
+session-observations/
+working-set/
+patterns-report.md
+tools/__pycache__/
+

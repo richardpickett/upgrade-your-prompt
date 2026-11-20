@@ -1,0 +1,17 @@
+{
+  "artifact_id": "session-pipeline",
+  "producer_role": "bbp-proposer",
+  "adversarial_auditor_role": "bbp-reviewer",
+  "ssot_leaf_ids": [
+    "adr-0009-working-set",
+    "adr-0010-fitness-evidence",
+    "goal-bring-sessions",
+    "goal-judge-fitness"
+  ],
+  "quality_snapshot": {
+    "opportunities": 8,
+    "ops": 8,
+    "defects": 0,
+    "quality": 1.0
+  }
+}

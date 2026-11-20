@@ -9,7 +9,7 @@ Plain-language meaning and remediation: `docs/fitness/<id>.md`.
 A practice row is required for its rung. A failure row on rung N holds the session on N-1.
 
 | Id | Rung | Result | Kind | Item | Check |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- |
 | P01 | 1 | effectiveness | practice | The end state is named, including by questions that build it | A series of prompts names a finished condition, or asks for the list, the edge, or the missing piece of one. A question counts as practice. One prompt does not have to hold the whole scope |
 | F01 | 1 | effectiveness | failure | No end state | The series never names a finished condition and the questions are not aimed at completing one |
 | P02 | 2 | effectiveness | practice | The check can fail | The human text contains a condition that could be false |
