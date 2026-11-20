@@ -3,10 +3,14 @@
   "producer_role": "bbp-proposer",
   "adversarial_auditor_role": "bbp-reviewer",
   "ssot_leaf_ids": [
+    "adr-0007-stay-proposed",
     "adr-0009-working-set",
     "adr-0010-fitness-evidence",
+    "copilot-chat-stores",
+    "timestamp-window",
     "goal-bring-sessions",
-    "goal-judge-fitness"
+    "goal-judge-fitness",
+    "nlc-0.8.0-pin"
   ],
   "quality_snapshot": {
     "opportunities": 8,

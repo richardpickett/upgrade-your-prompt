@@ -21,6 +21,7 @@ from harness_extract import (  # noqa: E402
     extract_cursor_transcript,
     extract_pi,
 )
+from inventory import list_copilot  # noqa: E402
 from patterns_report import build  # noqa: E402
 from rung import headline, wilson_lower  # noqa: E402
 from session_log import tool_record  # noqa: E402
@@ -180,6 +181,49 @@ class ExtractTest(unittest.TestCase):
             self.assertEqual(header["session_id"], "p2")
             self.assertEqual(turns[0]["text"], "Added later.")
 
+    def test_copilot_empty_requests_are_missing(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            plain = Path(tmp) / "chat.json"
+            plain.write_text(
+                json.dumps(
+                    {
+                        "sessionId": "empty",
+                        "creationDate": 1762000000000,
+                        "requests": [],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            header, turns = extract_copilot(plain)
+            self.assertEqual(turns, [])
+            self.assertIn("Human text", header["missing_fields"])
+            self.assertIn("Model text", header["missing_fields"])
+
+    def test_copilot_inventory_skips_other_user_json(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            user = Path(tmp)
+            chat = user / "workspaceStorage" / "abc" / "chatSessions" / "p1.json"
+            chat.parent.mkdir(parents=True)
+            chat.write_text(
+                json.dumps(
+                    {
+                        "sessionId": "p1",
+                        "creationDate": 1762000000000,
+                        "requests": [],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            transcript = user / "globalStorage" / "github.copilot-chat" / "p2.jsonl"
+            transcript.parent.mkdir(parents=True)
+            transcript.write_text(
+                json.dumps({"kind": 0, "v": {"sessionId": "p2", "requests": []}}) + "\n",
+                encoding="utf-8",
+            )
+            (user / "settings.json").write_text("{}", encoding="utf-8")
+            rows = list_copilot(user)
+            self.assertEqual(sorted(row["session_id"] for row in rows), ["p1", "p2"])
+
     def test_cursor_transcript_strips_replace_body(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "abc.jsonl"
@@ -245,6 +289,17 @@ class ScopeTest(unittest.TestCase):
         self.assertEqual(token, "applied")
         self.assertEqual([row["session_id"] for row in kept["sessions"]], ["old"])
         self.assertEqual(delete, [])
+
+    def test_missing_timestamp_stays_out_of_a_window(self) -> None:
+        now = datetime(2026, 11, 19, tzinfo=timezone.utc)
+        spec = parse_scope("all from the last month", now)
+        inventory = [
+            {"session_id": "dated", "agent": "cursor", "at": "2026-11-10T00:00:00Z"},
+            {"session_id": "undated", "agent": "cursor", "at": None},
+        ]
+        status, token, _delete = apply_scope(inventory, spec, {"sessions": []})
+        self.assertEqual(token, "applied")
+        self.assertEqual([row["session_id"] for row in status["sessions"]], ["dated"])
 
 
 class RungTest(unittest.TestCase):

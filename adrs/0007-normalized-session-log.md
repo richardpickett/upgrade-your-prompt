@@ -1,6 +1,6 @@
 # ADR 0007: Normalized session log is JSONL
 
-Status: Accepted
+Status: Proposed
 Date: 2026-11-16
 
 ## Context
