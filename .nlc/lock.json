@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "hub": "0.8.0",
+  "store": "project",
+  "store_path": ".nlc"
+}
