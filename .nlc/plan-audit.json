@@ -1,0 +1,21 @@
+{
+  "artifact_id": "session-pipeline",
+  "producer_role": "bbp-proposer",
+  "adversarial_auditor_role": "bbp-reviewer",
+  "ssot_leaf_ids": [
+    "adr-0007-stay-proposed",
+    "adr-0009-working-set",
+    "adr-0010-fitness-evidence",
+    "copilot-chat-stores",
+    "timestamp-window",
+    "goal-bring-sessions",
+    "goal-judge-fitness",
+    "nlc-0.8.0-pin"
+  ],
+  "quality_snapshot": {
+    "opportunities": 8,
+    "ops": 8,
+    "defects": 0,
+    "quality": 1.0
+  }
+}

@@ -1,0 +1,49 @@
+# Fitness notes
+
+One file per indicator in `docs/fitness-indicators.md`. Each note says what the row means in plain language and how to improve. The score is still the rung. The index labels each indicator efficiency or effectiveness. These files do not add weights.
+
+| Id | File |
+| --- | --- |
+| P01 | [P01.md](P01.md) |
+| F01 | [F01.md](F01.md) |
+| P02 | [P02.md](P02.md) |
+| F02 | [F02.md](F02.md) |
+| P03 | [P03.md](P03.md) |
+| F03 | [F03.md](F03.md) |
+| P04 | [P04.md](P04.md) |
+| F04 | [F04.md](F04.md) |
+| P05 | [P05.md](P05.md) |
+| F05 | [F05.md](F05.md) |
+| P06 | [P06.md](P06.md) |
+| F06 | [F06.md](F06.md) |
+| F07 | [F07.md](F07.md) |
+| P07 | [P07.md](P07.md) |
+| F08 | [F08.md](F08.md) |
+| F09 | [F09.md](F09.md) |
+| F10 | [F10.md](F10.md) |
+| F11 | [F11.md](F11.md) |
+| P08 | [P08.md](P08.md) |
+| P09 | [P09.md](P09.md) |
+| F12 | [F12.md](F12.md) |
+| F13 | [F13.md](F13.md) |
+| F14 | [F14.md](F14.md) |
+| F15 | [F15.md](F15.md) |
+| P10 | [P10.md](P10.md) |
+| P11 | [P11.md](P11.md) |
+| P12 | [P12.md](P12.md) |
+| P13 | [P13.md](P13.md) |
+| P14 | [P14.md](P14.md) |
+| P15 | [P15.md](P15.md) |
+| P16 | [P16.md](P16.md) |
+| F16 | [F16.md](F16.md) |
+| P17 | [P17.md](P17.md) |
+| P18 | [P18.md](P18.md) |
+| F17 | [F17.md](F17.md) |
+| F18 | [F18.md](F18.md) |
+| F19 | [F19.md](F19.md) |
+| F20 | [F20.md](F20.md) |
+| F21 | [F21.md](F21.md) |
+| P19 | [P19.md](P19.md) |
+| P20 | [P20.md](P20.md) |
+| P21 | [P21.md](P21.md) |
+| P22 | [P22.md](P22.md) |

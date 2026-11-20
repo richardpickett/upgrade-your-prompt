@@ -1,0 +1,257 @@
+{
+  "schema": 1,
+  "records": [
+    {
+      "artifact": ".agents/skills/extract-sessions/SKILL.md",
+      "gate_id": "extract-gate",
+      "outcome": "PASS",
+      "command": "python3 skill-text check SKILL_GATE:PASS",
+      "at": "2026-11-16T05:45:22Z"
+    },
+    {
+      "artifact": ".agents/skills/score-sessions/SKILL.md",
+      "gate_id": "score-gate",
+      "outcome": "PASS",
+      "command": "python3 skill-text check SKILL_GATE:PASS",
+      "at": "2026-11-16T05:45:22Z"
+    },
+    {
+      "artifact": "tools/session_log.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:11Z"
+    },
+    {
+      "artifact": "tools/harness_extract.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:11Z"
+    },
+    {
+      "artifact": "tools/inventory.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:12Z"
+    },
+    {
+      "artifact": "tools/working_set.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:12Z"
+    },
+    {
+      "artifact": "tools/rung.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:12Z"
+    },
+    {
+      "artifact": "tools/patterns_report.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:13Z"
+    },
+    {
+      "artifact": "tools/check_evidence.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:13Z"
+    },
+    {
+      "artifact": "tools/run_pipeline.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:13Z"
+    },
+    {
+      "artifact": "tools/test_pipeline.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:14Z"
+    },
+    {
+      "artifact": ".agents/skills/scope-sessions/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:14Z"
+    },
+    {
+      "artifact": ".agents/skills/extract-sessions/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:14Z"
+    },
+    {
+      "artifact": ".agents/skills/analyze-sessions/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:15Z"
+    },
+    {
+      "artifact": ".agents/skills/score-sessions/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:15Z"
+    },
+    {
+      "artifact": ".agents/skills/patterns-report/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:15Z"
+    },
+    {
+      "artifact": ".agents/skills/run/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:16Z"
+    },
+    {
+      "artifact": "docs/plans/normalized-session-log.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:17Z"
+    },
+    {
+      "artifact": "docs/fitness-indicators.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T04:47:17Z"
+    },
+    {
+      "artifact": ".agents/skills/analyze-sessions/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:40Z"
+    },
+    {
+      "artifact": ".agents/skills/extract-sessions/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": ".agents/skills/patterns-report/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": ".agents/skills/run/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": ".agents/skills/scope-sessions/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": ".agents/skills/score-sessions/SKILL.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": "docs/fitness-indicators.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": "docs/plans/normalized-session-log.md",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": "tools/check_evidence.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": "tools/harness_extract.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": "tools/inventory.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": "tools/patterns_report.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": "tools/run_pipeline.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:41Z"
+    },
+    {
+      "artifact": "tools/rung.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:42Z"
+    },
+    {
+      "artifact": "tools/session_log.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:42Z"
+    },
+    {
+      "artifact": "tools/test_pipeline.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:42Z"
+    },
+    {
+      "artifact": "tools/working_set.py",
+      "gate_id": "pipeline",
+      "outcome": "PASS",
+      "command": "python3 tools/test_pipeline.py",
+      "at": "2026-11-20T05:19:42Z"
+    }
+  ]
+}

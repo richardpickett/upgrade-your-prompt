@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "artifacts": [
+    ".agents/skills/analyze-sessions/SKILL.md",
+    ".agents/skills/extract-sessions/SKILL.md",
+    ".agents/skills/patterns-report/SKILL.md",
+    ".agents/skills/run/SKILL.md",
+    ".agents/skills/scope-sessions/SKILL.md",
+    ".agents/skills/score-sessions/SKILL.md",
+    "docs/fitness-indicators.md",
+    "docs/plans/normalized-session-log.md",
+    "tools/check_evidence.py",
+    "tools/harness_extract.py",
+    "tools/inventory.py",
+    "tools/patterns_report.py",
+    "tools/run_pipeline.py",
+    "tools/rung.py",
+    "tools/session_log.py",
+    "tools/test_pipeline.py",
+    "tools/working_set.py"
+  ]
+}
